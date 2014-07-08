@@ -1,0 +1,37 @@
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+body {
+	margin-top: 80px;
+}
+
+.container, .smile, .title {
+	outline: 1px solid black;
+
+}
+
+.container {
+	margin: 0 auto;
+	width: 600px;
+}
+
+.smile, .title {
+	height: 100px;
+}
+
+.smile {
+	background: url("../images/mad-lib-happy-face.png") no-repeat;
+	background-size: 50px;
+	background-position: 50%;
+	width: 150px;
+}
+
+.title {
+	width: 450px;
+	border-left: 0
+}
