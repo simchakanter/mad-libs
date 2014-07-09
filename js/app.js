@@ -9,6 +9,17 @@ angular.module('app', [])
       useless_skill: "",
       adjective: "",
       obnoxious_celebrity: "",
-      huge_number: ""
+      huge_number: "",
+      gender: "male",
+      gender_pronoun: pronoun
     };
+    var pronoun = whichGender(gender);
+    function whichGender(gender) {
+      if (gender === "male") {
+        return "he";
+      } else {
+        return "she";
+      }
+      }
+    }
   });

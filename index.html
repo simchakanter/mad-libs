@@ -35,10 +35,17 @@
 					<input type="text" ng-model="data.obnoxious_celebrity" placeholder="obnoxious celebrity">
 					<input type="text" ng-model="data.huge_number" placeholder="huge number">
 				</div>
+				<div>
+					Please specify this person's gender:
+					<input type="radio" name="gender" value="male" ng-model="data.gender">Male<br>
+					<input type="radio" name="gender" value="female" ng-model="data.gender">Female<br>
 			</div> <!-- end provide-words -->
 			<div class="mad-lib">
 				<p>
-					{{data.female_name}} was a {{data.job_title}} who loved technology. Although she loved parts of her job, she absolutely hated  {{data.tedious_task}} and {{data.dirty_task}}. So, {{data.female_name}} met with her life mentor {{data.celebrity}} who told her to learn about {{data.useless_skill}} with Thinkful. Thinkful didn't offer a course on {{data.useless_skill}} so she studied programming instead.
+					You chose gender: {{data.gender}}
+				</p>
+				<p>
+					{{data.female_name}} was a {{data.job_title}} who loved technology. Although {{data.gender_pronoun}} loved parts of her job, she absolutely hated  {{data.tedious_task}} and {{data.dirty_task}}. So, {{data.female_name}} met with her life mentor {{data.celebrity}} who told her to learn about {{data.useless_skill}} with Thinkful. Thinkful didn't offer a course on {{data.useless_skill}} so she studied programming instead.
 				</p>
 				<p>
 					What a great decision! With her new skills, {{data.female_name}} built a(n) {{data.adjective}} robot named {{data.obnoxious_celebrity}} that not only loved {{data.dirty_task}} but did it {{data.huge_number}} times faster. 
