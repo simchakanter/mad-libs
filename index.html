@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="app">
 <head>
 	<meta charset="UTF-8">
 	<title>Mad Libs</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body ng-controller="madLibs">
 	<div class="container">
 		<header>
 			<div class="smile pull-left">
@@ -21,19 +21,19 @@
 			<div class="provide-words">
 				<h2>Provide the following words:</h2>
 				<div class="question-container">
-					<input type="text" ng-model="female_name" ng-init="female_name=''" placeholder="female name">
-					<input type="text" ng-model="job_title" ng-init="job_title=''" placeholder="job title">
-					<input type="text" ng-model="tedious_task" ng-init="tedious_task=''" placeholder="tedious task">
+					<input type="text" ng-model="female_name" placeholder="female name">
+					<input type="text" ng-model="job_title" placeholder="job title">
+					<input type="text" ng-model="tedious_task" placeholder="tedious task">
 				</div>
 				<div class="question-container">
-					<input type="text" ng-model="dirty_task" ng-init="dirty_task=''" placeholder="dirty task">
-					<input type="text" ng-model="celebrity" ng-init="celebrity=''" placeholder="celebrity">
-					<input type="text" ng-model="useless_skill" ng-init="useless_skill=''" placeholder="useless skill">
+					<input type="text" ng-model="dirty_task" placeholder="dirty task">
+					<input type="text" ng-model="celebrity" placeholder="celebrity">
+					<input type="text" ng-model="useless_skill" placeholder="useless skill">
 				</div>
 				<div class="question-container">
-					<input type="text" ng-model="adjective" ng-init="adjective=''" placeholder="adjective">
-					<input type="text" ng-model="obnoxious_celebrity" ng-init="obnoxious_celebrity=''" placeholder="obnoxious celebrity">
-					<input type="text" ng-model="huge_number" ng-init="huge_number=''" placeholder="huge number">
+					<input type="text" ng-model="adjective" placeholder="adjective">
+					<input type="text" ng-model="obnoxious_celebrity" placeholder="obnoxious celebrity">
+					<input type="text" ng-model="huge_number" placeholder="huge number">
 				</div>
 			</div>
 			<div class="mad-lib">
