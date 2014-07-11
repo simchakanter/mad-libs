@@ -9,10 +9,18 @@ angular.module('app', [])
       useless_skill: "",
       adjective: "",
       obnoxious_celebrity: "",
-      huge_number: "",
-      gender: "male"
+      huge_number: ""
+    };
+    $scope.gender = "male";
+    $scope.selectGender = function(typeOfWord) {
+      if ($scope.gender === "male") {
+        return (typeOfWord === "pronoun") ? "he":"his";
+      } else {
+        return (typeOfWord === "pronoun") ? "she":"her";
+      }
     };
   });
+
 
 // I attempted to add a function in here to update the pronoun,
 // but it wasn't getting called when I changed the radio button.
