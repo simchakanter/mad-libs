@@ -21,7 +21,7 @@
 			<div class="provide-words">
 				<h2>Provide the following words:</h2>
 				<div class="question-container">
-					<input type="text" ng-model="data.female_name" placeholder="female name">
+					<input type="text" ng-model="data.name" placeholder="person's name">
 					<input type="text" ng-model="data.job_title" placeholder="job title">
 					<input type="text" ng-model="data.tedious_task" placeholder="tedious task">
 				</div>
@@ -37,18 +37,18 @@
 				</div>
 				<div>
 					Please specify this person's gender:
-					<input type="radio" name="gender" value="male" ng-model="data.gender">Male<br>
+					<input type="radio" name="gender" value="male" ng-model="data.gender">Male
 					<input type="radio" name="gender" value="female" ng-model="data.gender">Female<br>
 			</div> <!-- end provide-words -->
 			<div class="mad-lib">
 				<p>
-					You chose gender: {{data.gender}}
+					You chose gender: {{data.gender}} <br>
 				</p>
 				<p>
-					{{data.female_name}} was a {{data.job_title}} who loved technology. Although {{data.gender_pronoun}} loved parts of her job, she absolutely hated  {{data.tedious_task}} and {{data.dirty_task}}. So, {{data.female_name}} met with her life mentor {{data.celebrity}} who told her to learn about {{data.useless_skill}} with Thinkful. Thinkful didn't offer a course on {{data.useless_skill}} so she studied programming instead.
+					{{data.name}} was a {{data.job_title}} who loved technology. Although <span ng-if="data.gender === 'male'">he </span> <span ng-if="data.gender === 'female'">she </span> loved parts of <span ng-if="data.gender === 'male'">his </span> <span ng-if="data.gender === 'female'">her </span>  job, <span ng-if="data.gender === 'male'">he </span> <span ng-if="data.gender === 'female'">she </span>  absolutely hated  {{data.tedious_task}} and {{data.dirty_task}}. So, {{data.name}} met with <span ng-if="data.gender === 'male'">his </span> <span ng-if="data.gender === 'female'">her </span>  life mentor {{data.celebrity}} who told <span ng-if="data.gender === 'male'">his </span> <span ng-if="data.gender === 'female'">her </span>  to learn about {{data.useless_skill}} with Thinkful. Thinkful didn't offer a course on {{data.useless_skill}} so <span ng-if="data.gender === 'male'">he </span> <span ng-if="data.gender === 'female'">she </span>  studied programming instead.
 				</p>
 				<p>
-					What a great decision! With her new skills, {{data.female_name}} built a(n) {{data.adjective}} robot named {{data.obnoxious_celebrity}} that not only loved {{data.dirty_task}} but did it {{data.huge_number}} times faster. 
+					What a great decision! With <span ng-if="data.gender === 'male'">his </span> <span ng-if="data.gender === 'female'">her </span>  new skills, {{data.name}} built a(n) {{data.adjective}} robot named {{data.obnoxious_celebrity}} that not only loved {{data.dirty_task}} but did it {{data.huge_number}} times faster. 
 				</p>
 			</div> <!-- end mad-lib -->
 		</div> <!-- end mad-libs-content -->
