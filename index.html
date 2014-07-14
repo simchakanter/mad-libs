@@ -36,18 +36,18 @@
 				</div>
 				<div>
 					Please specify this person's gender:
-					<input type="radio" name="gender" value="male" ng-model="gender">Male
-					<input type="radio" name="gender" value="female" ng-model="gender">Female<br>
+					<input type="radio" name="gender" value="male" ng-model="data.gender">Male
+					<input type="radio" name="gender" value="female" ng-model="data.gender">Female<br>
 			</div> <!-- end provide-words -->
 			<div class="mad-lib">
 				<p>
-					You chose gender: {{gender}} <br>
+					You chose gender: {{data.gender}} <br>
 				</p>
 				<p>
-					{{data.name}} was a {{data.job_title}} who loved technology. Although {{selectGender("pronoun")}} loved parts of {{selectGender("possessive")}} job, {{selectGender("pronoun")}} absolutely hated  {{data.tedious_task}} and {{data.dirty_task}}. So, {{data.name}} met with {{selectGender("possessive")}} life mentor {{data.celebrity}} who told {{selectGender("possessive")}} to learn about {{data.useless_skill}} with Thinkful. Thinkful didn't offer a course on {{data.useless_skill}} so {{selectGender("pronoun")}} studied programming instead.
+					{{data.name}} was a {{data.job_title}} who loved technology. Although {{data.selectGender("pronoun")}} loved parts of {{data.selectGender("possessive")}} job, {{data.selectGender("pronoun")}} absolutely hated  {{data.tedious_task}} and {{data.dirty_task}}. So, {{data.name}} met with {{data.selectGender("possessive")}} life mentor {{data.celebrity}} who told {{data.selectGender("possessive")}} to learn about {{data.useless_skill}} with Thinkful. Thinkful didn't offer a course on {{data.useless_skill}} so {{data.selectGender("pronoun")}} studied programming instead.
 				</p>
 				<p>
-					What a great decision! With {{selectGender("possessive")}}  new skills, {{data.name}} built a(n) {{data.adjective}} robot named {{data.obnoxious_celebrity}} that not only loved {{data.dirty_task}} but did it {{data.huge_number}} times faster. 
+					What a great decision! With {{data.selectGender("possessive")}}  new skills, {{data.name}} built a(n) {{data.adjective}} robot named {{data.obnoxious_celebrity}} that not only loved {{data.dirty_task}} but did it {{data.huge_number}} times faster. 
 				</p>
 			</div> <!-- end mad-lib -->
 		</div> <!-- end mad-libs-content -->
