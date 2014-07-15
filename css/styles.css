@@ -68,12 +68,16 @@ h2 {
 	padding: 10px 10px 10px 30px;
 }
 
+.mad-libs-form {
+	padding-bottom: 40px;
+}
+
 .question-container {
 	text-align: center;
 }
 
 .mad-lib {
-	padding: 20px 30px 20px 30px;
+	padding: 20px 30px 40px 30px;
 	margin-top: 20px;
 	border-top: 1px solid black;
 }
@@ -83,4 +87,8 @@ h2 {
 	font-size: 18px;
 	line-height: 24px;
 	margin-bottom: 10px;
+}
+
+.error-messages {
+	color: red;
 }
