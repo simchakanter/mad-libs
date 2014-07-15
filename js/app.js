@@ -25,7 +25,6 @@ angular.module('app', [])
       }
     };
     $scope.reset = function() {
-      console.log("Reset function ran");
       // I know that I shouldn't have this again, but not sure
       // how to store it so it won't get updated.
       this.data = {
