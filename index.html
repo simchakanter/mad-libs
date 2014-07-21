@@ -19,7 +19,7 @@
     </header>
     <div class="mad-libs-content">
       <!-- Where are the variables validationPassed and submitted declared? -->
-      <div class="provide-words animate-hide" ng-hide="validationPassed === true">
+      <div class="provide-words animate-show-hide" ng-hide="validationPassed === true">
         <form class="mad-libs-form" name="madLibsForm" ng-submit="submit(); submitted = true;" novalidate>
           <div class="question-container">
             <input type="text" ng-model="data.name" placeholder="person's name" required>
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div> <!-- end provide-words -->
-      <div class="mad-lib" ng-show="validationPassed === true">
+      <div class="mad-lib animate-show-hide" ng-show="validationPassed === true">
         <p>
           {{data.name}} was a {{data.job_title}} who loved technology. Although {{data.selectGender("pronoun")}} loved parts of {{data.selectGender("possessive")}} job, {{data.selectGender("pronoun")}} absolutely hated  {{data.tedious_task}} and {{data.dirty_task}}. So, {{data.name}} met with {{data.selectGender("possessive")}} life mentor {{data.celebrity}} who told {{data.selectGender("possessive")}} to learn about {{data.useless_skill}} with Thinkful. Thinkful didn't offer a course on {{data.useless_skill}} so {{data.selectGender("pronoun")}} studied programming instead.
         </p>

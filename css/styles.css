@@ -1,3 +1,4 @@
+/* General styles */
 
 .pull-left {
 	float: left;
@@ -21,6 +22,8 @@ body {
 	margin: 0 auto;
 	width: 600px;
 }
+
+/* Header styles */
 
 header {
 	height: 100px;
@@ -67,10 +70,14 @@ h2 {
 	margin-bottom: 15px;
 }
 
+/* Main content area */
+
 .mad-libs-content {
 	padding-top: 25px;
 	clear: both;
 }
+
+/* Mad lib inputs */
 
 .provide-words {
 	padding: 10px 10px 10px 30px;
@@ -89,10 +96,11 @@ h2 {
 	margin-bottom: 20px;
 }
 
+/* Mad lib results */
+
 .mad-lib {
 	padding: 20px 30px 40px 30px;
 	margin-top: 20px;
-	border-top: 1px solid black;
 }
 
 .mad-lib p {
@@ -102,19 +110,35 @@ h2 {
 	margin-bottom: 10px;
 }
 
+/* Error messages */
+
 .error-messages {
 	color: red;
 }
 
-/* Animation styles */
+/* --- Animation styles --- */
 
-.animate-hide {
-	-webkit-transition: 2s ease-in-out;
-	transition: 2s ease-in-out;
+/* Hide the inputs after submission */
+
+.animate-show-hide {
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+	opacity: 1;
 }
 
-.animate-hide.ng-hide {
-	-webkit-transform: translate(0, -540px);
-	transform: translate(0, -540px);
+.animate-show-hide.ng-hide {
+	-webkit-transform: translate(0, -200px);
+	transform: translate(0, -200px);
 	z-index: 0;
+	opacity: 0;
+}
+
+.animate-show {
+	-webkit-transition: translate(0, -200px);
+	transition: translate(0, -200px);
+	opacity: 0;
+}
+
+.animate-show.ng-show {
+
 }
