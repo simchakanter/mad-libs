@@ -21,6 +21,7 @@ body {
 	border: 1px solid black;
 	margin: 0 auto;
 	width: 600px;
+	height: 380px;
 }
 
 /* Header styles */
@@ -120,25 +121,32 @@ h2 {
 
 /* Hide the inputs after submission */
 
-.animate-show-hide {
+.animate-questions {
 	-webkit-transition: 1s ease-in-out;
 	transition: 1s ease-in-out;
-	opacity: 1;
+  opacity: 1;
 }
 
-.animate-show-hide.ng-hide {
-	-webkit-transform: translate(0, -200px);
-	transform: translate(0, -200px);
-	z-index: 0;
+.animate-questions.ng-hide {
+/*	-webkit-transform: translate(0, -200px);
+	transform: translate(0, -200px);*/
 	opacity: 0;
 }
 
-.animate-show {
-	-webkit-transition: translate(0, -200px);
-	transition: translate(0, -200px);
+/* Show results after submission */
+
+.animate-results {
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+
+  opacity: 1;
+}
+
+.animate-results.ng-hide {
 	opacity: 0;
 }
-
-.animate-show.ng-show {
-
-}
+/*
+.animate-results.ng-hide-stagger {
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
+}*/
