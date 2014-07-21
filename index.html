@@ -19,7 +19,7 @@
     </header>
     <div class="mad-libs-content">
       <!-- Where are the variables validationPassed and submitted declared? -->
-      <div class="provide-words" ng-hide="validationPassed === true">
+      <div class="provide-words animate-hide" ng-hide="validationPassed === true">
         <form class="mad-libs-form" name="madLibsForm" ng-submit="submit(); submitted = true;" novalidate>
           <div class="question-container">
             <input type="text" ng-model="data.name" placeholder="person's name" required>
@@ -36,7 +36,7 @@
             <input type="text" ng-model="data.obnoxious_celebrity" placeholder="obnoxious celebrity" required>
             <input type="number" name="hugeNumber" ng-model="data.huge_number" placeholder="huge number" required>
           </div>
-          <div>
+          <div class="select-gender">
             Please specify this person's gender:
             <input type="radio" name="gender" value="male" ng-model="data.gender">Male
             <input type="radio" name="gender" value="female" ng-model="data.gender">Female<br>
@@ -65,5 +65,6 @@
   </div> <!-- end container -->
   <script src="js/angular.min.js"></script>
   <script src="js/app.js" type="text/javascript"></script>
+  <script src="js/angular-animate.min.js"></script>
 </body>
 </html>

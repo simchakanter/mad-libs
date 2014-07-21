@@ -11,18 +11,19 @@ body {
 	margin-top: 80px;
 }
 
+.container, header, .smile, .title {
+	box-sizing: border-box;	
+	z-index: 1;
+}
+
 .container {
 	border: 1px solid black;
 	margin: 0 auto;
 	width: 600px;
 }
 
-.smile {
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
-}
-
-.title {
+header {
+	height: 100px;
 	border-bottom: 1px solid black;
 }
 
@@ -31,11 +32,17 @@ body {
 }
 
 .smile {
+	border-right: 1px solid black;
 	background: url("../images/mad-lib-happy-face.png") no-repeat;
 	background-size: 50px;
 	background-position: 50%;
-	width: 149px;
+	width: 148px;
 }
+
+.title {
+	border-bottom: 1px solid black;
+}
+
 
 .title {
 	width: 450px;
@@ -61,6 +68,7 @@ h2 {
 }
 
 .mad-libs-content {
+	padding-top: 25px;
 	clear: both;
 }
 
@@ -69,11 +77,16 @@ h2 {
 }
 
 .mad-libs-form {
-	padding-bottom: 40px;
+	padding-bottom: 60px;
 }
 
 .question-container {
 	text-align: center;
+}
+
+.select-gender {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .mad-lib {
@@ -91,4 +104,17 @@ h2 {
 
 .error-messages {
 	color: red;
+}
+
+/* Animation styles */
+
+.animate-hide {
+	-webkit-transition: 2s ease-in-out;
+	transition: 2s ease-in-out;
+}
+
+.animate-hide.ng-hide {
+	-webkit-transform: translate(0, -540px);
+	transform: translate(0, -540px);
+	z-index: 0;
 }

@@ -1,4 +1,4 @@
-angular.module('app', [])
+angular.module('app', ['ngAnimate'])
   .controller('madLibs', function($scope) {
     $scope.data = {
       name: "",
